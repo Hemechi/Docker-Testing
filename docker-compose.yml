@@ -1,0 +1,10 @@
+version: '3'
+services:
+  helen:
+    #image: it for name your image after docker build -t nameyourimages .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3269:3000
